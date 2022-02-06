@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UsheR Official</title>
+    <style>
+        html,
+        body,
+        .grid-container {
+            height: 100%;
+            margin: 0;
+        }
+
+        .grid-container * {
+            border: 1px inherit red;
+            position: relative;
+        }
+
+        .grid-container *:after {
+            content: attr(class);
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            gap: 1px 1px;
+            grid-template-areas: "Usher Usher Usher Usher""music music link link""music music vidios vidios";
+        }
+
+        .Usher {
+            grid-area: Usher;
+        }
+
+        .link {
+            grid-area: link;
+        }
+
+        .music {
+            grid-area: music;
+        }
+
+        .vidios {
+            grid-area: vidios;
+        }
+
+        /* .UsheR {
+            font-size: 180px;
+            color: rgb(240, 15, 15);
+            font-style: italic;
+            text-align: center;
+        } */
+
+        a {
+            color: rgb(245, 103, 2);
+            margin-left: 35px;
+            font-size: 25px;
+            text-underline-position: auto;
+        }
+        .Usher {
+ font-size: 66px;
+color: rgb(70, 64, 64);
+
+text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #49ff18, 0 0 30px #49FF18, 0 0 40px #49FF18, 0 0 55px #49FF18, 0 0 75px #49ff18;
+color: rgb(32, 28, 28);
+
+}
+    </style>
+
+</head>
+
+<body>
+    <div class="grid-container">
+        <div class=>
+            <h1></h1>
+            <div class="Usher">Usher 4 ever</div>
+        </div><img src="ush.png" height="609px" width="300px" />
+        <div class="link">
+            <a href="https://en.wikipedia.org/wiki/Usher_(musician)" target="_blank">GURDA SULLA WIKIPEDIA</a>
+        </div>
+        <div class="music">
+            <audio controls>
+                <source src="Usher_-_Confessions_Part_1_(Lyrics)(256kbps).mp3" type="audio/mpeg">
+                HOT COLLECTION>>
+            </audio>
+            <audio controls>
+                <source src="Usher_-_U_got_it_bad_LYRICS(256kbps).mp3" type="audio/mpeg">
+            </audio>
+            <audio controls>
+                <source src="Usher_-_Burn_(Lyrics)(256kbps).mp3" type="audio/mpeg">
+            </audio>
+
+        </div>
+        <div class="vidios">
+            <video width="400" height="500" controls>
+                <source src="Usher_-_Love_in_This_Club_ft._Young_Jeezy(480p).mp4" type="video/mp4">
+            </video>
+            <video width="400" height="500" controls>
+                <source src="Usher_-_Moving_Mountains_(Official_Video)(480p).mp4" type="video/mp4">
+
+            </video>
+        </div>
+    </div>
+</body>
+
+</html>
